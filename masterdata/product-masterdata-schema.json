@@ -1,5 +1,5 @@
 {
-    "$id": "https://schema.medifit-prima.net/json-schema/masterdata/product-masterdata-schema.json",
+    "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-masterdata-schema.json",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "definitions": {
       "ProductMasterdata": {
