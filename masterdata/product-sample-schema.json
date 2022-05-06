@@ -1,0 +1,48 @@
+{
+  "$id": "https://schema.medifit-prima.net/json-schema/masterdata/product-sample-schema.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "definitions": {
+    "ProductSample": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ProductSample"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "product_instance": {
+          "$ref": "product-instance-schema.json#/definitions/ProductInstance"
+        },
+        "dateOfSampleDrawing": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sampling_place": {
+          "type": "string"
+        },
+        "application": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "product_instance",
+        "dateOfSampleDrawing"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/ProductSample"
+    }
+  ]
+}
