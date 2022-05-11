@@ -18,7 +18,11 @@
         "product_instance": {
           "$ref": "product-instance-schema.json#/definitions/ProductInstance"
         },
-        "dateOfSampleDrawing": {
+        "product_instance_url": {
+          "type": "string",
+          "format": "url"
+        },
+        "date_of_sample_drawing": {
           "type": "string",
           "format": "date-time"
         },
@@ -32,11 +36,23 @@
           "type": "string"
         }
       },
-      "required": [
-        "type",
-        "id",
-        "product_instance",
-        "dateOfSampleDrawing"
+      "oneOf": [
+        {
+          "required": [
+            "type",
+            "id",
+            "date_of_sample_drawing",
+            "product_instance"
+          ]
+        },
+        {
+          "required": [
+            "type",
+            "id",
+            "date_of_sample_drawing",
+            "product_instance_url"
+          ]
+        }
       ]
     }
   },
