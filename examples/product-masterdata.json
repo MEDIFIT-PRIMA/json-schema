@@ -1,0 +1,53 @@
+{
+  "type": "ProductMasterdata",
+  "id": "197c3649-f2ee-4083-b798-e175c7bddcb4",
+  "name": [
+    {
+      "locale": "en_GB",
+      "text": "product name"
+    }
+  ],
+  "description": [
+    {
+      "locale": "en_GB",
+      "text": "product description"
+    }
+  ],
+  "brand_name": [
+    {
+      "locale": "en_GB",
+      "text": "product brand name"
+    }
+  ],
+  "food_business_operator": "my food business",
+  "ingredients": [
+    {
+      "locale": "en_GB",
+      "text": "water,salt"
+    }
+  ],
+  "allergens": [
+    {
+      "locale": "en_GB",
+      "text": "salt"
+    }
+  ],
+  "packaging_information": [
+    {
+      "locale": "en_GB",
+      "text": "salt"
+    }
+  ],
+  "additional_instructions": [
+    {
+      "locale": "en_GB",
+      "text": "salt"
+    }
+  ],
+  "nutrition_declaration": [
+    {
+      "locale": "en_GB",
+      "text": "salt"
+    }
+  ]
+}

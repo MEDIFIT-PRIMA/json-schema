@@ -1,0 +1,9 @@
+{
+  "type": "ProductSample",
+  "id": "747ad4f3-431a-4cd2-b51d-02a2a82208ac",
+  "date_of_sample_drawing": "2022-02-01",
+  "sampling_place": "in the woods",
+  "application": "chainsaw",
+  "comment": "the weather was nice",
+  "product_instance_url": "https://masterdata.medifi-prima.net/ProductInstance/c83b401e-b244-45db-8f69-71f0c4211c61"
+}

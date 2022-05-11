@@ -1,0 +1,73 @@
+{
+  "type": "ProductSample",
+  "id": "747ad4f3-431a-4cd2-b51d-02a2a82208ac",
+  "date_of_sample_drawing": "2022-02-01",
+  "sampling_place": "in the woods",
+  "application": "chainsaw",
+  "comment": "the weather was nice",
+  "product_instance": {
+    "type": "ProductInstance",
+    "id": "c83b401e-b244-45db-8f69-71f0c4211c61",
+    "lot": "0001",
+    "external_identifier": "ext_0001",
+    "use_by_date": "2030-03-31",
+    "production_date": "2020-01-01",
+    "remarks": "something remarkable",
+    "year_of_harvest": 2019,
+    "year_of_production": 2019,
+    "date_of_minimum_durability": "2030-12-31",
+    "product": {
+      "type": "ProductMasterdata",
+      "id": "197c3649-f2ee-4083-b798-e175c7bddcb4",
+      "name": [
+        {
+          "locale": "en_GB",
+          "text": "product name"
+        }
+      ],
+      "description": [
+        {
+          "locale": "en_GB",
+          "text": "product description"
+        }
+      ],
+      "brand_name": [
+        {
+          "locale": "en_GB",
+          "text": "product brand name"
+        }
+      ],
+      "food_business_operator": "my food business",
+      "ingredients": [
+        {
+          "locale": "en_GB",
+          "text": "water,salt"
+        }
+      ],
+      "allergens": [
+        {
+          "locale": "en_GB",
+          "text": "salt"
+        }
+      ],
+      "packaging_information": [
+        {
+          "locale": "en_GB",
+          "text": "salt"
+        }
+      ],
+      "additional_instructions": [
+        {
+          "locale": "en_GB",
+          "text": "salt"
+        }
+      ],
+      "nutrition_declaration": [
+        {
+          "locale": "en_GB",
+          "text": "salt"
+        }
+      ]
+    }
+  }
+}

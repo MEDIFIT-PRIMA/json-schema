@@ -1,0 +1,13 @@
+{
+  "type": "ProductInstance",
+  "id": "f0a32de5-baa7-4f26-ac40-5ead94ae2087",
+  "lot": "0002",
+  "external_identifier": "ext_0001",
+  "use_by_date":"2030-03-31",
+  "production_date": "2020-01-01",
+  "remarks": "something remarkable",
+  "year_of_harvest": 2019,
+  "year_of_production": 2019,
+  "date_of_minimum_durability": "2030-12-31",
+  "product_url": "https://masterdata.medifi-prima.net/ProductMasterdata/197c3649-f2ee-4083-b798-e175c7bddcb4"  
+}
