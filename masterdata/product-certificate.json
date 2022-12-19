@@ -1,0 +1,62 @@
+{
+  "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-certificate.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "definitions": {
+    "ProductCertificate": {
+      "type": "object",
+      "allOf": [{
+        "properties": {
+
+          "certificationAgency": {
+            "type": "string"
+          },
+          "certificationAgencyURL": {
+            "type": "string"
+          },
+          "certificationAuditDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "certificationEndDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "certificationIdentification": {
+            "type": "string"
+          },
+          "certificationStandard": {
+            "type": "string"
+          },
+          "certificationStartDate": {
+            "type": "string",
+            "format": "date"
+          },
+
+          "certificationStatement": {
+            "type": "string"
+          },
+          "certificationStatus": {
+            "type": "string"
+          },
+          "certificationSubject": {
+            "type": "string"
+          },
+          "certificationType": {
+            "type": "string"
+          },
+          "certificationURI": {
+            "type": "string"
+          },
+          "certificationValue": {
+            "type": "string"
+          },
+          "initialCertificationDate": {
+            "type": "string",
+            "format": "date"
+          }
+
+        }
+      }]
+    }
+  }
+}

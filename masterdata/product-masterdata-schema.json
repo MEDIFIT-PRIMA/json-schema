@@ -1,98 +1,106 @@
 {
-    "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-masterdata-schema.json",
-    "$schema": "https://json-schema.org/draft/2019-09/schema",
-    "definitions": {
-      "ProductMasterdata": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "enum": [
-              "ProductMasterdata"
-            ]
-          },
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "array",
-            "items": [
-              {
-                "$ref": "core-schema.json#/definitions/LocaleText"
-              }
-            ]
-          },
-          "description": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "brand_name": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "food_business_operator": {
-            "type": "string"
-          },
-          "ingredients": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "allergens": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "packaging_information": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "additional_instructions": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            },
-          "nutrition_declaration": {
-            "type": "array",
-            "items": [
-                {
-                  "$ref": "core-schema.json#/definitions/LocaleText"
-                }
-              ]
-            }
+  "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-masterdata-schema.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "definitions": {
+    "ProductMasterdata": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "ProductMasterdata"
+          ]
         },
-        "required": [
-          "type",
-          "id"
-        ]
-      }
-    },
-    "allOf": [
-      {
-        "$ref": "#/definitions/ProductMasterdata"
-      }
-    ]
-  }
-  
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "name": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "description": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "gtin": {
+          "type": "string"
+        },
+        "brand_name": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "gpc_bricks": {
+          "type": "array",
+          "items": [{
+            "type": "string"
+          }]
+        },
+        "food_business_operator": {
+          "type": "string"
+        },
+        "ingredients": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "allergens": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "origin": {
+          "$ref": "product-origin-schema.json#/definitions/ProductOriginSchema"
+        },
+        "packaging_information": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "additional_instructions": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        },
+        "nutrition_declaration": {
+          "type": "array",
+          "items": [{
+            "$ref": "core-schema.json#/definitions/LocaleText"
+          }]
+        }
+      },
+      "certificates": {
+        "type": "array",
+        "items": [{
+          "$ref": "product-certificate.json#/definitions/ProductCertificate"
+        }]
+      },
+      "production_process": {
+        "type": "array",
+        "items": [{
+          "$ref": "core-schema.json#/definitions/LocaleText"
+        }]
+      },
+      "time_limit_for_consumption": {
+        "type": "string"
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    }
+  },
+  "allOf": [{
+    "$ref": "#/definitions/ProductMasterdata"
+  }]
+}

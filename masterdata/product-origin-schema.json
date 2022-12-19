@@ -1,0 +1,49 @@
+{
+  "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-origin-schema.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "definitions": {
+    "ProductOriginSchema": {
+      "type": "object",
+      "allOf": [{
+        "properties": {
+
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "array",
+            "items": [
+              {
+                "$ref": "core-schema.json#/definitions/LocaleText"
+              }
+            ]
+          },
+          "type":{
+            "type":"object",
+            "properties":{
+              "COUNTRY_OF_ORIGIN":{
+                "type":"string",
+                "enum": [
+                  "Greece",
+                  "Turkey"
+                ]
+              },
+              "REGION_OF_ORIGIN":{
+                "type":"string",
+                "enum": [
+                  "yet to discuss"
+                ]
+              }
+
+            }
+
+          },
+          "code": {
+            "type": "string"
+          }
+        }
+      }]
+    }
+  }
+}
