@@ -59,15 +59,14 @@
           "required": [
             "type",
             "id",
-            "lot",
-            "product"
+            "product",
+            "external_identifier"
           ]
         },
         {
           "required": [
             "type",
             "id",
-            "lot",
             "product_url"
           ]
         }

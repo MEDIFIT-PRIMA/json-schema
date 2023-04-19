@@ -58,7 +58,7 @@
           }]
         },
         "origin": {
-          "$ref": "product-origin-schema.json#/definitions/ProductOriginSchema"
+          "type": "string"
         },
         "packaging_information": {
           "type": "array",
@@ -95,12 +95,9 @@
         "type": "string"
       },
       "required": [
-        "type",
-        "id"
+        "id",
+        "type"
       ]
     }
-  },
-  "allOf": [{
-    "$ref": "#/definitions/ProductMasterdata"
-  }]
+  }
 }
