@@ -1,0 +1,91 @@
+{
+  "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-sensor-schema.json",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "ObjectEvent"
+      ]
+    },
+    "eventTime": {
+      "time": {
+        "type": "string",
+        "format": "date-time"
+      }
+    },
+    "eventTimeZoneOffset": {
+      "type": "string",
+      "pattern": "^([+]|[-])((0[0-9]|1[0-3]):([0-5][0-9])|14:00)$"
+    },
+    "epcList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "OBSERVE",
+        "ADD",
+        "DELETE"
+      ]
+    },
+    "bizStep": {
+      "type": "string",
+      "enum": [
+        "inspecting"
+      ]
+    },
+    "sensorElementList": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sensorElement": {
+            "type": "object",
+            "properties": {
+              "sensorReport": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "MassConcentration"
+                      ]
+                    },
+                    "chemicalSubstance": {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    "value": {
+                      "type": "number"
+                    },
+                    "uom": {
+                      "type": "string",
+                      "pattern": "^[A-Z0-9]{2,3}$"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "chemicalSubstance",
+                    "value",
+                    "uom"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "sensorReport"
+        ]
+      }
+    }
+  }
+}
