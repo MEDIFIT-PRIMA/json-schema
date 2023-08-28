@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/ShaikDayan/Shaik_rep/master/core-schema.json",
+  "$id": "https://raw.githubusercontent.com/MEDIFIT-PRIMA/json-schema/feature/MEDFIT-4-updating_json_schema/masterdata/core-schema.json",
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "definitions": {
     "LocaleText":               {

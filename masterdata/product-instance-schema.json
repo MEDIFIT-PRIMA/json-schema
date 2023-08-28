@@ -1,5 +1,5 @@
 {
-  "$id": "https://medifit-prima.github.io/json-schema/masterdata/product-instance-schema.json",
+  "$id": "https://raw.githubusercontent.com/MEDIFIT-PRIMA/json-schema/feature/MEDFIT-4-updating_json_schema/masterdata/product-instance-schema.json",
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "definitions": {
     "ProductInstance": {
@@ -59,8 +59,7 @@
           "required": [
             "type",
             "id",
-            "product",
-            "external_identifier"
+            "product"
           ]
         },
         {
@@ -72,10 +71,5 @@
         }
       ]
     }
-  },
-  "allOf": [
-    {
-      "$ref": "#/definitions/ProductInstance"
-    }
-  ]
+  }
 }
