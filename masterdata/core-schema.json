@@ -1,18 +1,18 @@
 {
-  "$id":"https://medifit-prima.github.io/json-schema/masterdata/core-schema.json",
-  "$schema":"https://json-schema.org/draft/2019-09/schema",
-  "definitions":{
-    "LocaleText":{
-      "type":"object",
-      "properties":{
-        "locale":{
-          "type":"string"
+  "$id": "https://raw.githubusercontent.com/ShaikDayan/Shaik_rep/master/core-schema.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "definitions": {
+    "LocaleText":               {
+      "type": "object",
+      "properties": {
+        "locale": {
+          "type": "string"
         },
-        "text":{
-          "type":"string"
+        "text": {
+          "type": "string"
         }
       },
-      "required":[
+      "required": [
         "locale",
         "text"
       ]
